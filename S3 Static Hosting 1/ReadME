@@ -1,0 +1,11 @@
+🚀 Successfully Hosted a Static Website on AWS S3!
+
+Key Features & Implementation:
+✅ AWS S3 for Static Website Hosting – Configured an S3 bucket to serve as a hosting solution for a sample website (PicStudio).
+✅ Public Access Configuration – Enabled ACL (Access Control List) and granted public read access to all files for seamless availability.
+✅ Security & Access Management – Disabled private-only access while ensuring controlled access through proper permissions.
+✅ Efficient Content Delivery – Optimized the storage settings to ensure smooth and fast content loading.
+
+🔹 This project showcases my ability to work with AWS cloud services, storage management, and website deployment. Looking forward to exploring more advanced cloud solutions!
+Key Features & Implementation: ✅ AWS S3 for Static Website Hosting – Configured an S3 bucket to serve as a hosting solution for a sample website (PicStudio). ✅ Public Access Configuration – Enabled ACL (Access Control List) and granted public read access to all files for seamless availability. ✅ Security & Access Management – Disabled private-only access while ensuring controlled access through proper permissions. ✅ Efficient Content Delivery – Optimized the storage settings to ensure smooth and fast content loading. 🔹 This project showcases my ability to work with AWS cloud services, storage management, and website deployment. Looking forward to exploring more advanced cloud solutions!
+Skills: Amazon Web Services (AWS) · Amazon S3 · Static Hosting · Hosting Services
