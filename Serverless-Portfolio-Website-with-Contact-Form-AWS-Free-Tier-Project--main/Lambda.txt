@@ -1,0 +1,31 @@
+import json
+import boto3
+
+def lambda_handler(event, context):
+    ses = boto3.client('ses', region_name='ap-south-1')
+    
+    data = json.loads(event['body'])
+    name = data.get('name', 'No Name')
+    email = data.get('email', 'No Email')
+    message = data.get('message', 'No Message')
+
+    try:
+        response = ses.send_email(
+            Source='sahilmutha2391@gmail.com',
+            Destination={'ToAddresses': ['sahilmutha230901@gmail.com']},
+            Message={
+                'Subject': {'Data': f'Contact Form from {name}'},
+                'Body': {'Text': {'Data': f"From: {name} <{email}>\n\n{message}"}}
+            }
+        )
+        return {
+            'statusCode': 200,
+            'headers': {'Access-Control-Allow-Origin': '*'},
+            'body': json.dumps({'message': 'Message sent'})
+        }
+    except Exception as e:
+        return {
+            'statusCode': 500,
+            'headers': {'Access-Control-Allow-Origin': '*'},
+            'body': json.dumps({'error': str(e)})
+        }
