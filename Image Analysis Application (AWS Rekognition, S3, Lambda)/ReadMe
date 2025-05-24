@@ -23,6 +23,7 @@ AWS Lambda: Orchestrates Rekognition results and handles logic for sorting and f
 
 
 
+
 🛠️ Tech Stack
 AWS S3 – Cloud storage and event trigger
 
