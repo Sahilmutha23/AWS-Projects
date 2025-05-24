@@ -1,0 +1,33 @@
+🧠 Image Analysis Application using AWS Rekognition, S3, and Lambda
+This project is a serverless image analysis application that automatically detects and classifies objects in uploaded photos using AWS Rekognition. It is built entirely with AWS services including Amazon S3, AWS Lambda, and AWS Rekognition, with the goal of providing a fast, scalable, and fully automated image processing pipeline.
+
+🚀 Features
+Automatic Image Analysis: When a new image is uploaded to the S3 bucket, it triggers an AWS Lambda function.
+
+Object & Label Detection: Uses AWS Rekognition to analyze the image and detect objects, scenes, and activities.
+
+Confidence-Based Sorting: The Lambda function processes and organizes detected labels by confidence score, ensuring the most accurate results are shown first.
+
+Chunked Processing: Handles large images efficiently by breaking down processing into manageable chunks, avoiding Lambda timeouts.
+
+Scalable & Serverless: Built entirely using AWS serverless architecture, enabling cost-effective scaling without infrastructure management.
+
+🧩 Architecture
+Amazon S3: Stores uploaded images and triggers the processing pipeline.
+
+AWS Rekognition: Analyzes image contents for labels, objects, and scenes.
+
+AWS Lambda: Orchestrates Rekognition results and handles logic for sorting and formatting outputs.
+
+(Optional) Database/Storage Service (e.g., DynamoDB, S3): Stores the processed results for later access or reporting.
+
+
+
+🛠️ Tech Stack
+AWS S3 – Cloud storage and event trigger
+
+AWS Rekognition – Image analysis and object detection
+
+AWS Lambda (Python) – Serverless backend for orchestrating image processing
+
+Python – Main programming language for Lambda function
