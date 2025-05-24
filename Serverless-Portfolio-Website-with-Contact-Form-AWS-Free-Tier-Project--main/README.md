@@ -31,6 +31,8 @@ User receives a success message on the website.
 📌 Architecture Diagram
 → (Add your AWS architecture diagram image or link here)
 
+![Architecture](https://github.com/user-attachments/assets/633d3ad8-33c3-4a36-bc38-50df6d6d51cd)
+
 🛠️ AWS Services Used
 Service	Purpose
 Amazon S3	Static website hosting
